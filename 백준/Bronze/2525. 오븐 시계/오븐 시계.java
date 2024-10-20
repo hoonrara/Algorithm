@@ -11,9 +11,8 @@ public class Main {
         B = B+C;
 
         if (B >59) {
-            A = A+B/60;
+            A = (A+B/60)%24;
             B = B%60;
-            if (A>23) A = A-24;
         }
         System.out.println(A + " " + B);
     }
